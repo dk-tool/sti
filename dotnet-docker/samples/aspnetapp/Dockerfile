@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /source
 
 # copy csproj and restore as distinct layers
-COPY /home/gitlab-runner/builds/8UoYsh_W/0/root/sti/dotnet-docker/samples/aspnetapp/*.sln .
+COPY samples/aspnetapp/*.sln .
 COPY aspnetapp/*.csproj ./aspnetapp/
 RUN dotnet restore
 
