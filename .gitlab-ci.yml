@@ -4,7 +4,7 @@ build:
     name: gcr.io/kaniko-project/executor:debug
     entrypoint: [""]
   script:
-    - mkdir -p /kaniko/.docker
+    - mkdir -p ~/.docker
     - |-
        KANIKOPROXYBUILDARGS=""
        KANIKOCFG="\"auths\":{\"${CI_REGISTRY}\":{\"auth\":\"$(printf "%s:%s" "${CI_REGISTRY_USER}" "${CI_REGISTRY_PASSWORD}" | base64 | tr -d '\n')\"}}"
