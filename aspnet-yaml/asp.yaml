@@ -10,7 +10,7 @@ spec:
     runAsNonRoot: false
   containers:
     - name: ngc-pod
-      image: 'harbor.sti.demo/sti/aspnetapp:v1'
+      image: 'harbor.sti.demo/sti/aspnetapp:v3'
       ports:
         - name: http
           containerPort: 80
