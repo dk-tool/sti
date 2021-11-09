@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
     - name: asp-pod
-      image: 'harbor.sti.demo/sti/aspnetapp:v3'
+      image: 'harbor.sti.demo/sti/aspnetapp:v4'
       ports:
         - name: http
           containerPort: 80
