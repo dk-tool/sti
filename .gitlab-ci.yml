@@ -10,5 +10,5 @@ build:
       /kaniko/executor
       --context "${CI_PROJECT_DIR}/dotnet-docker/samples/aspnetapp"
       --dockerfile "Dockerfile"
-      --destination "harbor.sti.demo/sti/aspnetapp:v5"
+      --destination "harbor.sti.demo/sti/aspnetapp:v6"
       --insecure 
