@@ -4,12 +4,10 @@ metadata:
   name: asp-pod
   labels:
     app: asp-pod
-  namespace: default
+  namespace: demo
 spec:
-  securityContext:
-    runAsNonRoot: false
   containers:
-    - name: ngc-pod
+    - name: asp-pod
       image: 'harbor.sti.demo/sti/aspnetapp:v3'
       ports:
         - name: http
